@@ -1,5 +1,6 @@
 package io.swagger.v3.core.oas.models;
 
+import javax.annotation.Nonnull;
 import javax.validation.constraints.DecimalMax;
 import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.Max;
@@ -18,6 +19,7 @@ public class BeanValidationsModel {
     @Max(99)
     protected Integer age;
 
+    @Nonnull
     protected String username;
 
     @Size(min = 6, max = 20)
